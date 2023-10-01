@@ -1,0 +1,56 @@
+---
+title: "Habits"
+author: "ハチアン"
+format:
+    revealjs:
+        theme: [solarized, ./custom.scss]
+        html-math-method: katex
+---
+
+## こんにちは
+
+- 何時に起きましたか？
+- 結果動画総論漢字
+
+```python
+import something
+
+test = "abc"
+print("aaa")
+
+for i in [1, 2, 3]:
+    print(i ** i)
+
+# コメントします。comments!!!
+```
+
+## おはようございます。
+
+- こんばんは
+- どうも
+
+\begin{gather*}
+a_1=b_1+c_1\\
+a_2=b_2+c_2-d_2+e_2
+\end{gather*}
+
+\begin{align}
+a_{11}& =b_{11}&
+  a_{12}& =b_{12}\\
+a_{21}& =b_{21}&
+  a_{22}& =b_{22}+c_{22}
+\end{align}
+
+## plotly
+```{python}
+import plotly.express as px
+import plotly.io as pio
+df = px.data.iris()
+fig = px.scatter(
+  df, x="sepal_width", y="sepal_length", 
+  color="species", 
+  marginal_y="violin", marginal_x="box", 
+  trendline="ols", template="simple_white"
+)
+fig.show()
+```
