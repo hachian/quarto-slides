@@ -54,3 +54,7 @@ fig = px.scatter(
 )
 fig.show()
 ```
+
+## image
+
+![boo](img.png)
